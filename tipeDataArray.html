@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+
+<body>
+    <script>
+        let arrayKosong = [];
+
+        let arrayNama = ["Faris", 2, "Teguh", true, "Pambudi"];
+
+        let names = [];
+        names.push("Faris");
+        names.push("Teguh", "Pambudi");
+
+
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[2]);
+
+        names[0] = "Ubah Ah";
+        console.table(names);
+
+        delete names[2];
+
+        console.table(names);
+
+        // memasukkan array dalam array
+        names.push(["ada", "adaw", "Afaa"]);
+
+        console.table(names);
+    </script>
+</body>
+
+</html>
