@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+
+<body>
+    <script>
+        const person = {};
+
+        //menambah Atau mengubah
+        person["nama"] = "Faris Teguh";
+        person["alamat"] = "indonesia";
+        person["umur"] = 23;
+
+        console.table(person);
+
+        //menghapus
+        delete person["umur"];
+
+        console.table(person);
+
+        // cara lain membuat object langsung dengan propertinya
+        const person2 = {
+            "nama": "Faris Teguh Pambudi",
+            "alamat": "indonesia",
+            "umur": 23
+        }
+
+        //mengakses property
+        console.info(`Nama : ${person2.nama}`);
+        console.info(`Alamat : ${person2.alamat}`);
+        console.info(`Umur  : ${person2.umur}`);
+    </script>
+</body>
+
+</html>
