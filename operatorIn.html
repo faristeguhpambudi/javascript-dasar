@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Operator In</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            firstName: "Faris",
+            lastName: "Teguh"
+        };
+
+        //in untuk mengecek ada atau tidak
+        if ("firstName" in person) //true
+        {
+            alert(`Hello ${person.firstName}`);
+        } else {
+            alert(`Hello`);
+        }
+
+        const student = {
+            firstName: "Eko",
+            middleName: undefined,
+            lastName: "Pambudi"
+        }
+
+        if ("middleName" in person) {
+            alert(`Hai ${student.middleName}`);
+        } else {
+            alert(`Hello`);
+        }
+    </script>
+</body>
+
+</html>
