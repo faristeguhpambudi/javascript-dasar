@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+
+<body>
+    <script>
+        //membuat function, dengan parameter firstName dan lastName
+        function sayHello(firstName, lastName) {
+            const say = `Hello ${firstName} ${lastName}`;
+            return say;
+        }
+
+        //memanggil function dengan mengirim parameter
+        const result = sayHello("Faris", "Teguh");
+        document.writeln(`<p>${result}</p>`);
+
+
+        function isContains(array, searchValue) {
+            for (const element of array) {
+                if (element === searchValue) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const array = [1, 22, 3, 2, 4, 56, 55, 70];
+        const search = 4;
+        const found = isContains(array, search);
+        document.writeln(`<p>${found}</p>`);
+    </script>
+</body>
+
+</html>
