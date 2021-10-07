@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Funcion</title>
+</head>
+
+<body>
+    <script>
+        //FUNCTION TANPA NAMA, disimpan didalam variable
+        let say = function (name)
+        {
+            document.writeln(`Hello ${name}`);
+        }
+
+        //menjalanlankan function
+        say("Eko");
+        say("Budi");
+
+
+        function giveMeName(callback)
+        {
+            callback("Ekoo");
+        }
+
+        giveMeName(say);
+        giveMeName(function(name){
+            document.writeln(`Hi. ${name}`);
+        });
+    </script>
+</body>
+
+</html>
