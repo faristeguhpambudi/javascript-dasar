@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Arrow Function Di Object Method</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name : "ekoo",
+            sayHello : (name) =>
+            {
+                console.info(this); //dapetnya window bukan personnya
+                console.info(`Hello ${name}, My Name is ${this.name}`); //thisnya jadi kosong
+            }
+        };
+
+        person.sayHello("Budi");
+    </script>
+</body>
+
+</html>
